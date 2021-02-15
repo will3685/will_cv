@@ -1,4 +1,15 @@
-.container-profile{
-  padding-right: 15vw;
-  padding-left: 15vw;
+@media (max-width: 575px) {
+  .container-profile{
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
 }
+
+@media (min-width: 575px) {
+  .container-profile{
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+}
+
+

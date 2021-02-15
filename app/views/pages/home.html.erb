@@ -18,29 +18,65 @@
 
   <div id="particles-js" class="banner"></div>
     
-    <div class="container-profile banner-presentation">
-      <p> 
-        <%= t('.presentation') %>
-      </p> 
-    </div>
-    <div class="container-profile d-flex banner-name">
-      <h1>Will The<span style="color:#61b15a">ard</span></h1>
-    </div>
-    <div class="container-profile banner-about-me">
-      <p>
-        <%= t('.about-me') %>
-      </p>
-    </div>
-    <div class="banner-job">
-      <h2>
-        <%= t('.banner-job') %>
-      </h2>
-    </div>
-    <div class="banner-location">
-      <p>
-        <%= t('.location') %>
-      </p> 
+  <div class="container-profile banner-presentation">
+    <p> 
+      <%= t('.presentation') %>
+    </p> 
+  </div>
+  <div class="container-profile d-flex banner-name">
+    <h1>Will The<span style="color:#61b15a">ard</span></h1>
+  </div>
+  <div class="container-profile banner-about-me">
+    <p>
+      <%= t('.about-me') %>
+    </p>
+  </div>
+  <div class="banner-job">
+    <h2>
+      <%= t('.banner-job') %>
+    </h2>
+  </div>
+  <div class="banner-location">
+    <p>
+      <%= t('.location') %>
+    </p> 
+  </div>
+</div>
+
+<%# ABOUT SECTION  %>
+  
+<div class="section-two about position-relative">
+  <div class="container-profile">
+    <div class="row about-text align-items-center">
+      <div class="about-content col-lg-8 col-md-8 col-sm-6">
+        <h2>
+          <%= t('.about') %>
+        </h2>
+        <p>
+          <%= t('.about-html') %>
+        </p>
+        <h5 class="mb-5">
+          <%= t('.work-first') %>
+          <%= link_to "Grupo de Moda Soma", "https://www.somagrupo.com.br/", target: "_blank", class: "without-decoration" %>
+          <%= t('.work-second') %>
+        </h5>
+      </div>
+      <div class="mb-5 col-lg-4 col-md-4 col-sm-6">
+        <%= image_tag 'profile_wht_bgrnd.png', class: "profile-picture d-print-none float-right" %>
+      </div>
     </div>
   </div>
+  <div class="custom-shape-divider-top-1612401506">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="custom-shape-divider-bottom-1612261414">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 119" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+
 
 

@@ -7,3 +7,65 @@
   overflow: hidden;
   z-index: 0;
 }
+
+// section two about
+
+.section-two {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden; 
+  position: relative;
+  background: $light-black;
+}
+
+.custom-shape-divider-top-1612401506 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1612401506 svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 22px;
+}
+
+.custom-shape-divider-top-1612401506 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1612261414 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1612261414 svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 62px;
+}
+
+.custom-shape-divider-bottom-1612261414 .shape-fill {
+  fill: #f6f6f6;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1612261414 svg {
+      width: calc(148% + 1.3px);
+      height: 40px;
+  }
+}
+
