@@ -30,4 +30,31 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  pages:
+    home:
+      banner-job: "Full Stack Developer"
+      presentation: "Hi, my name is"
+      about-me: "Civil engineering for passion & coding for fun"
+      location: "Based in Rio de Janeiro"
+      about: "About me"
+      about-html: "I am a civil engineer by the Federal University of Rio de Janeiro. Over the years in the academic life, I have had a chance to dive into a pool full of code. As a professional, I decided to, beside building our environment, help designers, small agencies and businesses bring their ideas to life. I have been working on some personal projects to keep improving my abilities, learning new programming languages and get familiar with new frameworks. I am always down for new challenges! My second most precious commodity in life, I invest time."
+      work-first: "I am currently working at"
+      work-second: "as web developer."
+      skills: "Skills & Tools"
+      skill-good: "Advanced"
+      skill-medium: "Intermediate"
+      skill-basic: "Beginner"
+      project: "Things I´ve been work on"
+      project-title: "One Click"
+      project-text: "A simple Ruby on Rails app for managing agenda..."
+      entertain: "In a regular life"
+      entertain-text: "Beside coding, I have a few thing that entertain myself. I'm really passionate about music." 
+      entertain-text-2: "I can listen to music all day long. I can say that music take me here, by far, the main thing."
+      entertain-text-3: "I'm sharing my top favorite albums,those checked, I can sing them backwards."
+      entertain-joke: "Can you spot yours? Can you recognize them without cliking?"
+      entertain-social: "Follow me on" 
+      entertain-social-2: "I have some mad playlist that can entertain you."
+
+      footer-mention-1: "This website definitely does not represent the skillz of Will Theard, this is his personal web site, built as a therapy session"
+      footer-mention-2: "Not currently looking for a job, but here's my contacts. HIT ME UP if you're into that."
+    
