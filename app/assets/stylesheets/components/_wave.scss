@@ -69,3 +69,42 @@
   }
 }
 
+// section three skills
+.section-three {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden; 
+  background: #f6f6f6;
+}
+
+// section four project
+.section-four {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden; 
+  background:#1e212d;
+}
+.custom-shape-divider-top-1612398373 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1612398373 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 79px;
+}
+
+.custom-shape-divider-top-1612398373 .shape-fill {
+  fill: #f6f6f6;
+}
