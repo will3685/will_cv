@@ -24,14 +24,16 @@ gem 'jbuilder', '~> 2.7'
 gem 'i18n'
 # gem 'world-flags', github: 'kristianmandrup/world-flags', branch: 'master'
 
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-gem 'autoprefixer-rails'
-gem 'font-awesome-sass'
+
 
 group :development, :test do
   gem 'pry-byebug'
