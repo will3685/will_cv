@@ -15,3 +15,15 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+// External import  
+import "bootstrap";
+
+// Internal import 
+import { particleJS } from '..//components/particles';
+import Aos from '../components/aos';
+
+document.addEventListener('turbolinks:load', () => {
+  particleJS();
+  Aos();
+});
