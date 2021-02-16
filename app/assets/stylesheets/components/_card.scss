@@ -25,20 +25,20 @@
   justify-content: center;
   // overflow: hidden;
 
+  .skill-content {
+    border: 3px solid;
+    border-radius: 15px;
+  }
   .advanced {
-    border: 3px solid;
     border-color: $gold;
-    border-radius: 15px;
   }
+  
   .intermediate {
-    border: 3px solid;
     border-color: $crazy-green;
-    border-radius: 15px;
   }
+
   .beginner {
-    border: 3px solid;
     border-color: $blue-dark;
-    border-radius: 15px;
   }
     
   .cards {

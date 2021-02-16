@@ -10,7 +10,7 @@
     <% @languages.each do |language, sym| %>
       <%= link_to root_path(locale: sym), class: "without-decoration" do %>
         <div class="icon-flag">
-          <%= image_tag "#{language}.png" %>
+          <%= image_tag "#{language}.png", alt:"language flag" %>
         </div>
       <% end %>
     <% end%>
@@ -62,7 +62,7 @@
         </h5>
       </div>
       <div class="mb-5 col-lg-4 col-md-4 col-sm-6">
-        <%= image_tag 'profile_wht_bgrnd.png', class: "profile-picture d-print-none float-right" %>
+        <%= image_tag 'profile_wht_bgrnd.png', alt:"Profile picture", class: "profile-picture d-print-none float-right" %>
       </div>
     </div>
   </div>
@@ -115,7 +115,7 @@
       <% Skill::SKILLS.each do |skill| %>
         <% if skill[:category]=="frontend"%>
           <div class="card__collection clear-fix">
-            <div class="cards  <%= skill[:level] %> cards--two">
+            <div class="cards  skill-content <%= skill[:level] %> cards--two">
               <svg class="img-responsive" alt="Cards Image" viewBox="0 0 128 128">
                 <%= skill[:svg_path].html_safe %>
               </svg>
@@ -134,7 +134,7 @@
       <% Skill::SKILLS.each do |skill| %>
         <% if skill[:category]=="backend"%>
           <div class="card__collection clear-fix">
-            <div class="cards  <%= skill[:level] %> cards--two">
+            <div class="cards  skill-content <%= skill[:level] %> cards--two">
               <svg class="img-responsive" alt="Cards Image" viewBox="0 0 128 128">
                 <%= skill[:svg_path].html_safe %>
               </svg>
@@ -153,7 +153,7 @@
       <% Skill::SKILLS.each do |skill| %>
         <% if skill[:category]=="web-design"%>
           <div class="card__collection clear-fix">
-            <div class="cards  <%= skill[:level] %> cards--two">
+            <div class="cards skill-content <%= skill[:level] %> cards--two">
               <svg class="img-responsive" alt="Cards Image" viewBox="0 0 128 128">
                 <%= skill[:svg_path].html_safe %>
               </svg>
@@ -172,7 +172,7 @@
       <% Skill::SKILLS.each do |skill| %>
         <% if skill[:category]=="tool"%>
           <div class="card__collection clear-fix">
-            <div class="cards  <%= skill[:level] %> cards--two">
+            <div class="cards skill-content <%= skill[:level] %> cards--two">
               <svg class="img-responsive" alt="Cards Image" viewBox="0 0 128 128">
                 <%= skill[:svg_path].html_safe %>
               </svg>
@@ -215,13 +215,13 @@
 
       <div class="showcase">
         <div class="card card-1">
-          <%= image_tag 'first_child.jpg', class: " image-project" %>
+          <%= image_tag 'first_child.jpg', alt:"Project Image", class: " image-project" %>
         </div>
         <div class="card card-2">
-          <%= image_tag 'second_child.jpg', class: " image-project" %>
+          <%= image_tag 'second_child.jpg', alt:"Project Image", class: " image-project" %>
         </div>
         <div class="card card-3">
-          <%= image_tag 'third_child.png', class: " image-project" %>
+          <%= image_tag 'third_child.png', alt:"Project Image", class: " image-project" %>
         </div>
       </div>
 
@@ -245,31 +245,31 @@
     <%= t('.entertain-text-2') %> <br />
     <%= t('.entertain-text-3') %>
   </p>
-  <h3 class="container-profile"><%= t('.entertain-social') %> <a href="#" class="icon-contact without-decoration"><i class="fab fa-spotify"></i> </a> <%= t('.entertain-social-2') %></h3>
+  <h3 class="container-profile"><%= t('.entertain-social') %> <a href="#" aria-label="about my spotify" class="icon-contact without-decoration"><i class="fab fa-spotify"></i> </a> <%= t('.entertain-social-2') %></h3>
 
   <ul class="container-profile mt-5">
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Continuum</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city-deluxe-version">Good Kid Mad City</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Alicia-keys/Songs-in-a-minor">Songs In a Minor</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Stromae/Racine-carree">Racine Carrée</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/2pac/Me-against-the-world">Me Against the World</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Baco-exu-do-blues/Bluesman">Bluesman</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://en.wikipedia.org/wiki/Un_tour_ensemble">Un Tour Ensemble</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/Zenglen-5-kontinan-lyrics#primary-album">Let it Groove</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/Barikad-crew-goumen-pou-saw-kwe-lyrics#primary-album">Goumen Pou saw kwè</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/La-fouine/Aller-retour">Aller Retour</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Noir Désir</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Michael-jackson/Invincible">Invincible</a></li>
-    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Kanye-west/My-beautiful-dark-twisted-fantasy">My Beautiful Dark Twisted Fantasy</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Dave/Psychodrama">Psychodrama</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Fababy/La-force-du-nombre">La Force du Nombre</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Scylla/Masque-de-chair">Masque de Chair</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Lino/Requiem">Requiem</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Continuum</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Continuum</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Lino/Requiem">Requiem</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Continuum</a></li>
-    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum">Continuum</a></li>             
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song" >Continuum</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city-deluxe-0version" aria-label="Read more about that song">Good Kid Mad City</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Alicia-keys/Songs-in-a-minor" aria-label="Read more about that song">Songs In a Minor</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Stromae/Racine-carree" aria-label="Read more about that song">Racine Carrée</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/2pac/Me-against-the-world" aria-label="Read more about that song">Me Against the World</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Baco-exu-do-blues/Bluesman" aria-label="Read more about that song">Bluesman</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://en.wikipedia.org/wiki/Un_tour_ensemble" aria-label="Read more about that song">Un Tour Ensemble</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/Zenglen-5-kontinan-lyrics#primary-album" aria-label="Read more about that song">Let it Groove</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/Barikad-crew-goumen-pou-saw-kwe-lyrics#primary-album" aria-label="Read more about that song">Goumen Pou saw kwè</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/La-fouine/Aller-retour" aria-label="Read more about that song">Aller Retour</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song">Noir Désir</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Michael-jackson/Invincible" aria-label="Read more about that song">Invincible</a></li>
+    <li class="checked"><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Kanye-west/My-beautiful-dark-twisted-fantasy" aria-label="Read more about that song">My Beautiful Dark Twisted Fantasy</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Dave/Psychodrama" aria-label="Read more about that song">Psychodrama</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Fababy/La-force-du-nombre" aria-label="Read more about that song">La Force du Nombre</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Scylla/Masque-de-chair" aria-label="Read more about that song">Masque de Chair</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Lino/Requiem" aria-label="Read more about that song">Requiem</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song">Continuum</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song">Continuum</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/Lino/Requiem" aria-label="Read more about that song">Requiem</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song">Continuum</a></li>
+    <li><span class="tick"></span><a target="_blank" href="https://genius.com/albums/John-mayer/Continuum" aria-label="Read more about that song">Continuum</a></li>             
   </ul>
 
   <div class="custom-shape-divider-top-1612619083">
@@ -283,23 +283,23 @@
 <div class="section-six footer">
   <div class="footer-content container-profile">
     <p>Copyleft © 2021</p>
-    <p> <%= t('.footer-mention-1') %> — <a href="https://github.com/will3685/personal-site" class="without-decoration" target="_blank">open sourced</a>.</p>
+    <p> <%= t('.footer-mention-1') %> — <a href="https://github.com/will3685/personal-site" aria-label="access my contact" class="without-decoration" target="_blank">open sourced</a>.</p>
     <p> <%= t('.footer-mention-2') %> </p>
   </div>
 
   <div class="footer-contact row justify-content-center" >
     <div >
-      <a href="https://www.linkedin.com/in/will-theard-788683b7/" target="_blank" class="icon-contact-1 mx-3">
+      <a href="https://www.linkedin.com/in/will-theard-788683b7/" aria-label="access my contact" target="_blank" class="icon-contact-1 mx-3">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
     <div>
-      <a href="https://github.com/will3685" target="_blank" class="icon-contact-1 mx-3">
+      <a href="https://github.com/will3685" aria-label="access my contact" target="_blank" class="icon-contact-1 mx-3">
         <i class="fab fa-github-square"></i>
       </a>
     </div>
     <div>
-      <a href="mailto:lavardwilltheard@poli.ufrj.br" target="_blank" class="icon-contact-1 mx-3">
+      <a href="mailto:lavardwilltheard@poli.ufrj.br" aria-label="access my contact" target="_blank" class="icon-contact-1 mx-3">
         <i class="fas fa-at"></i>
       </a>
     </div>
